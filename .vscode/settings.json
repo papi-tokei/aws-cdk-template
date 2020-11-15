@@ -1,0 +1,41 @@
+{
+    "python.linting.mypyEnabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.analysis.disabled": ["use-before-def"],
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": ["--skip-string-normalization"],
+    "[python]": {
+        "editor.tabSize": 4, // インデントレベルは「4」
+        "editor.formatOnSave": true, // 保存時に自動整形を実施
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "autoDocstring.docstringFormat": "google",
+
+    // ================= Frontend Development Setting =================
+    "eslint.alwaysShowStatus": true,
+    "typescript.suggest.completeJSDocs": true,
+    "[javascript]": {
+        // "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        // "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    // "tslint.alwaysShowRuleFailuresAsWarnings": true,
+    // "tslint.alwaysShowStatus": true,
+    // "eslint.autoFixOnSave": true,
+    "files.associations": {
+        "*.vue": "vue"
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "vue"
+    ]
+}
